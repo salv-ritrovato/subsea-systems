@@ -18,8 +18,17 @@ export const engineeringPage = {
   ctaLong: 'See how we build them',
 }
 
-/** Footer includes main sections plus the engineering page. */
+/**
+ * Deep Ocean page — accessed via footer and contextual CTAs.
+ */
+export const deepOceanPage = {
+  path: '/deep-ocean',
+  label: 'Deep Ocean',
+}
+
+/** Footer includes main sections plus secondary pages. */
 export const footerLinks = [
   ...navigationLinks,
   { label: engineeringPage.label, to: engineeringPage.path },
+  { label: deepOceanPage.label, to: deepOceanPage.path },
 ]

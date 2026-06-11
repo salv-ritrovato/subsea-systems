@@ -1,4 +1,6 @@
+import { Link } from 'react-router-dom'
 import { explorationCards } from '../../data/explorationData'
+import { deepOceanPage } from '../../data/navigationData'
 import ExplorationCard from '../ui/ExplorationCard'
 import Reveal, { StaggerItem, StaggerReveal } from '../ui/Reveal'
 import './exploration.css'
@@ -7,7 +9,7 @@ export default function DeepSeaExploration() {
   return (
     <section
       id="exploration"
-      className="exploration-section scroll-mt-24 px-8 pb-24 pt-20 md:px-12 md:pb-32 md:pt-24"
+      className="exploration-section scroll-mt-24 px-8 pb-20 pt-20 md:px-12 md:pb-28 md:pt-24"
     >
       <div className="exploration-section__ambient" aria-hidden="true" />
 
@@ -31,7 +33,11 @@ export default function DeepSeaExploration() {
 
         <StaggerReveal className="exploration-grid" stagger={0.15}>
           {explorationCards.map((card, i) => (
-            <StaggerItem key={card.id} variant="scaleIn" className="h-full">
+            <StaggerItem
+              key={card.id}
+              variant="scaleIn"
+              className={card.featured ? 'h-full [grid-row:span_3]' : 'h-full'}
+            >
               <ExplorationCard
                 {...card}
                 index={i + 1}
@@ -40,6 +46,15 @@ export default function DeepSeaExploration() {
             </StaggerItem>
           ))}
         </StaggerReveal>
+
+        <Reveal className="mt-5 flex justify-center md:mt-6">
+          <Link
+            to={deepOceanPage.path}
+            className="font-sans text-[11px] font-medium uppercase tracking-[0.2em] text-sky-400/80 transition-opacity duration-300 hover:opacity-70"
+          >
+            Explore bioluminescent zones →
+          </Link>
+        </Reveal>
       </div>
     </section>
   )

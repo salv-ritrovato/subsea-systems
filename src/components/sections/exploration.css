@@ -49,9 +49,8 @@
 @media (min-width: 768px) {
   .exploration-grid {
     grid-template-columns: 1.15fr 1fr;
-    grid-template-rows: repeat(3, minmax(160px, 1fr));
+    grid-template-rows: repeat(3, minmax(200px, 1fr));
     gap: 1.25rem;
-    min-height: 640px;
   }
 
   .exploration-card--featured {
