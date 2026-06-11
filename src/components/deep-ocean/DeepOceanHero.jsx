@@ -13,7 +13,7 @@ export default function DeepOceanHero() {
     <section className="deep-ocean-hero">
       <div className="absolute inset-0 overflow-hidden">
         <video
-          className="h-full w-full object-cover"
+          className="absolute inset-0 h-full w-full object-cover"
           src={JELLYFISH_VIDEO}
           autoPlay
           muted

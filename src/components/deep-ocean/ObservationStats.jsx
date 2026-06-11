@@ -4,7 +4,7 @@ import Reveal from '../ui/Reveal'
 
 export default function ObservationStats() {
   return (
-    <section className="relative -mt-px bg-[#060c12] px-8 pb-24 pt-16 md:px-12 md:pb-32 md:pt-20">
+    <section className="relative -mt-px bg-[#060c12] px-8 pb-24 pt-0 md:px-12 md:pb-32 md:pt-0">
       <div className="deep-ocean-fade-bottom deep-ocean-fade-bottom--to-footer" aria-hidden="true" />
 
       <div className="relative z-10 mx-auto max-w-6xl">

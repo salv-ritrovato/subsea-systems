@@ -15,6 +15,9 @@ export const depthZones = [
     name: 'Sunlight Zone',
     description:
       'Photosynthesis drives the base of the food chain. Dense with megafauna — manta rays, whale sharks, and schooling fish. Our shallow platforms conduct continuous biodiversity surveys without surface intervention.',
+    image: '/pictures/christina-spiliotopoulou-fkPDVWHikIs-unsplash.jpg',
+    imageAlt: 'Sunlit shallow water from above',
+    imagePosition: 'object-top',
   },
   {
     id: 'twilight',
@@ -22,6 +25,8 @@ export const depthZones = [
     name: 'Twilight Zone',
     description:
       'Light fades to near-zero. The mesopelagic is home to the largest daily migration on Earth — billions of organisms ascending to feed at night and retreating by day. A frontier almost entirely unmapped.',
+    image: '/pictures/aiamkay-jellyfish-6651202.jpg',
+    imageAlt: 'Bioluminescent jellyfish drifting in near-zero light',
   },
   {
     id: 'midnight',
@@ -29,6 +34,8 @@ export const depthZones = [
     name: 'Midnight Zone',
     description:
       'Permanent darkness. Pressure exceeds 400 atmospheres. Gelatinous organisms and chemosynthetic communities dominate — life forms that have never seen sunlight and were unknown to science a century ago.',
+    image: '/pictures/9624038-jellyfish-3609068.jpg',
+    imageAlt: 'Translucent jellyfish suspended in total darkness',
   },
   {
     id: 'abyssal',
@@ -36,6 +43,8 @@ export const depthZones = [
     name: 'Abyssal Zone',
     description:
       'The largest habitat on Earth, covering over half the ocean floor. Sediment plains, abyssal hills, and hydrothermal vent fields — ecosystems running entirely on geothermal energy. Our Explorer 3000 operates continuously at these depths.',
+    image: '/pictures/jeremy-bishop-G9i_plbfDgk-unsplash.jpg',
+    imageAlt: 'Deep ocean floor in near-total darkness',
   },
   {
     id: 'hadal',
@@ -43,6 +52,9 @@ export const depthZones = [
     name: 'Hadal Zone',
     description:
       'The ocean trenches. Crushing pressures, near-freezing temperatures, and complete isolation. Depths beyond current platform ratings — the next frontier for autonomous deep-water exploration.',
+    image: '/pictures/alex_rainer-ZX30k2e8AjM-unsplash.jpg',
+    imageAlt: 'Ocean trench in complete darkness',
+    imagePosition: 'object-center',
   },
 ]
 
