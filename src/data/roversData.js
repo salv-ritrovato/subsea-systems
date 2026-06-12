@@ -20,10 +20,10 @@ export const roversCards = [
   },
   {
     id: 'zero-intervention',
-    image: '/pictures/alex_rainer-ZX30k2e8AjM-unsplash.jpg',
-    imageAlt: 'Lone figure standing at the edge of a vast ocean at dusk',
+    image: '/pictures/sarah-lee-QURU8IY-RaI-unsplash.jpg',
+    imageAlt: 'Underwater light rays piercing deep blue water with rising bubbles',
     title: 'Zero Surface Intervention',
     description:
-      'Once deployed, our rovers complete full mission profiles without operator input — pre-loaded waypoints, onboard decision logic, and automatic abort protocols keep each mission on track from descent to recovery.',
+      'Once deployed, our rovers operate entirely on their own — navigating by pre-loaded waypoints, adapting to currents, and executing abort protocols autonomously from descent to recovery.',
   },
 ]
