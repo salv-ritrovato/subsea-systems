@@ -31,8 +31,8 @@ export default function EngineeringVideo() {
 
         <div className="engineering-video__grid absolute inset-0 z-[3]" aria-hidden="true" />
 
-        <div className="relative z-10 flex h-full items-end">
-          <Reveal className="mx-auto w-full max-w-6xl px-8 pb-12 pt-32 md:px-12 md:pb-16 md:pt-40">
+        <div className="relative z-10 flex h-full items-center">
+          <Reveal className="mx-auto w-full max-w-6xl px-8 py-12 md:px-12 md:py-16">
             <p className="mb-4 font-sans text-[11px] font-medium uppercase tracking-[0.2em] text-sky-400/70">
               {label}
             </p>
