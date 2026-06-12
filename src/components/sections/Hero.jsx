@@ -8,7 +8,7 @@ const HERO_VIDEO = '/videos/10480-224857514.mp4'
 
 export default function Hero() {
   return (
-    <section className="relative flex min-h-svh flex-col items-center justify-end overflow-hidden">
+    <section className="relative flex min-h-svh flex-col items-center justify-end overflow-hidden bg-[#060c12]">
       <video
         className="absolute inset-0 h-full w-full object-cover"
         src={HERO_VIDEO}

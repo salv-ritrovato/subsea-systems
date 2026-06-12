@@ -10,7 +10,7 @@ const JELLYFISH_VIDEO = '/videos/213616.mp4'
 
 export default function DeepOceanHero() {
   return (
-    <section className="deep-ocean-hero">
+    <section className="deep-ocean-hero bg-[#030609]">
       <div className="absolute inset-0 overflow-hidden">
         <video
           className="absolute inset-0 h-full w-full object-cover"
