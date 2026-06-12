@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { footerLinks } from '../../data/navigationData'
+import { fleetUnits } from '../../data/fleetData'
 import { siteConfig } from '../../data/siteConfig'
 import Logo from '../ui/Logo'
 import { StaggerItem, StaggerReveal } from '../ui/Reveal'
@@ -22,6 +23,9 @@ export default function Footer() {
 
         <StaggerItem>
           <nav aria-label="Footer navigation">
+            <p className="mb-4 font-sans text-[9px] font-medium uppercase tracking-[0.18em] text-white/25">
+              Pages
+            </p>
             <ul className="flex flex-col gap-3">
               {footerLinks.map(({ label, to }) => (
                 <li key={to}>
@@ -30,6 +34,31 @@ export default function Footer() {
                     className="font-sans text-[11px] font-medium uppercase tracking-[0.16em] text-white/45 transition-opacity duration-300 hover:text-white/75"
                   >
                     {label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        </StaggerItem>
+
+        <StaggerItem>
+          <nav aria-label="Fleet products">
+            <p className="mb-4 font-sans text-[9px] font-medium uppercase tracking-[0.18em] text-white/25">
+              Fleet
+            </p>
+            <ul className="flex flex-col gap-3">
+              {fleetUnits.map(({ slug, name, tagline }) => (
+                <li key={slug}>
+                  <Link
+                    to={`/fleet/${slug}`}
+                    className="group flex flex-col font-sans transition-opacity duration-300 hover:opacity-80"
+                  >
+                    <span className="text-[11px] font-medium uppercase tracking-[0.16em] text-white/45">
+                      {name}
+                    </span>
+                    <span className="mt-0.5 text-[10px] normal-case tracking-normal text-white/25">
+                      {tagline}
+                    </span>
                   </Link>
                 </li>
               ))}
