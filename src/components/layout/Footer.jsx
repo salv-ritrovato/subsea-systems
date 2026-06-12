@@ -14,7 +14,7 @@ export default function Footer() {
       >
         <StaggerItem>
           <div className="flex flex-col items-center text-center md:items-start md:text-left">
-            <Logo className="opacity-80" />
+            <Logo className="opacity-80 translate-x-6 md:translate-x-0" />
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/40">
               {siteConfig.tagline}
             </p>
