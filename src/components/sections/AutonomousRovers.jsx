@@ -29,9 +29,19 @@ export default function AutonomousRovers() {
           </header>
         </Reveal>
 
-        <StaggerReveal className="grid gap-8 md:grid-cols-2 md:gap-10">
-          {roversCards.map((card) => (
-            <StaggerItem key={card.id} className="h-full">
+        <StaggerReveal className="grid gap-8 md:grid-cols-2 md:gap-10 lg:grid-cols-3">
+          {roversCards.map((card, i) => (
+            <StaggerItem
+              key={card.id}
+              className={[
+                'h-full',
+                roversCards.length % 2 !== 0 && i === roversCards.length - 1
+                  ? 'md:col-span-2 lg:col-span-1'
+                  : '',
+              ]
+                .filter(Boolean)
+                .join(' ')}
+            >
               <FeatureCard {...card} />
             </StaggerItem>
           ))}

@@ -18,4 +18,12 @@ export const roversCards = [
     description:
       'Acoustic survey arrays and multi-beam sonar map terrain through turbid water, detecting obstacles and targets long before visual range. Continuous situational awareness, even in zero visibility.',
   },
+  {
+    id: 'zero-intervention',
+    image: '/pictures/alex_rainer-ZX30k2e8AjM-unsplash.jpg',
+    imageAlt: 'Lone figure standing at the edge of a vast ocean at dusk',
+    title: 'Zero Surface Intervention',
+    description:
+      'Once deployed, our rovers complete full mission profiles without operator input — pre-loaded waypoints, onboard decision logic, and automatic abort protocols keep each mission on track from descent to recovery.',
+  },
 ]
