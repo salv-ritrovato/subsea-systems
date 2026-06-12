@@ -31,6 +31,13 @@
     animation: exploration-sonar 6s ease-in-out infinite;
   }
 
+  @media (prefers-reduced-motion: reduce) {
+    .exploration-section__sonar {
+      animation: none;
+      background-size: 100% 100%;
+    }
+  }
+
   @keyframes exploration-sonar {
     0% { background-position: 200% 0; }
     100% { background-position: -200% 0; }
