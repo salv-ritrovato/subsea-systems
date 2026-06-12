@@ -1,16 +1,36 @@
-# React + Vite
+# Subsea Systems
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This website is a concept brand experience for a fictional deep-sea robotics company, built as a component-driven single-page application with dedicated subpages. It represents a focused exploration of cinematic, editorial web design applied to modern frontend development.
 
-Currently, two official plugins are available:
+The visual system is built on darkness: near-black abyssal backgrounds (`#060c12`, `#030609`), full-bleed underwater video, and light used sparingly — like bioluminescence. A restrained accent palette (sky, cyan, amber, green) distinguishes sections and fleet units without ever breaking the depth of the environment.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The project is not just a fictional product site, but also an expression of design philosophy: atmosphere through restraint, and immersion through pacing.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Aesthetic
 
-## Expanding the ESLint configuration
+**Cinematic Deep-Ocean Interface Design**
+The interface is built around generous negative space, slow reveal animations, and high-contrast typography floating over abyssal gradients. Full-screen video heroes set the tone; scroll-driven staggered transitions control the rhythm of every section.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The typographic voice pairs a light serif (Cormorant Garamond) for headlines with a tracked-out uppercase sans (Inter) for labels and navigation — evoking the contrast between the organic ocean and the engineered machines that explore it. Every interaction, easing curve, and gradient is designed to feel submerged rather than decorated.
+
+---
+
+## Development Notes
+
+This site is an ecosystem in constant evolution. I am actively collaborating with Claude to iterate on features, optimize the codebase, and experiment with new architectural solutions.
+
+The goal is twofold: to continuously improve the user experience and to refine my *prompt engineering* techniques. Using AI consciously allows me to write cleaner code, minimize token usage, and maintain a development process that is fluid, rigorous, and dedicated to continuous learning.
+
+---
+
+## Stack
+
+- React 19 (Vite)
+- Tailwind CSS v4
+- Plain CSS for component-level animations and visual effects
+- Framer Motion for reveal and stagger animations
+- Lenis for smooth scrolling
+- React Router v7 with per-page SEO via react-helmet-async
+- Media pipeline: WebP images (sharp) and ffmpeg-compressed hero videos
