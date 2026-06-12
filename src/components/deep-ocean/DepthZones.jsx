@@ -18,12 +18,12 @@ export default function DepthZones() {
           </p>
         </Reveal>
 
-        <StaggerReveal className="deep-ocean-timeline flex flex-col gap-10 md:gap-12" stagger={0.1}>
+        <StaggerReveal className="subsea-timeline flex flex-col gap-10 md:gap-12" stagger={0.1}>
           {depthZones.map(({ id, range, name, description, image, imageAlt, imagePosition = 'object-center' }) => (
             <StaggerItem key={id}>
-              <article className="deep-ocean-timeline__item flex gap-6 md:gap-8">
+              <article className="subsea-timeline__item flex gap-6 md:gap-8">
                 <div className="flex flex-col items-center pt-1.5">
-                  <span className="deep-ocean-timeline__dot" aria-hidden="true" />
+                  <span className="subsea-timeline__dot" aria-hidden="true" />
                 </div>
                 <div className="flex-1 pb-2">
                   <span className="font-sans text-[10px] font-medium uppercase tracking-[0.2em] text-sky-400/60">

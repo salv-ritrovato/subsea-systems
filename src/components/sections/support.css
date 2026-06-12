@@ -1,20 +1,24 @@
 /* ── Support section ─────────────────────────────────────────────────────── */
 
-.support-section {
-  position: relative;
-  background-color: #060c12;
-}
+@layer components {
 
-.support-section__line {
-  height: 1px;
-  background: linear-gradient(
-    90deg,
-    transparent 0%,
-    rgba(56, 189, 248, 0.2) 50%,
-    transparent 100%
-  );
-}
+  .support-section {
+    position: relative;
+    background-color: #060c12;
+  }
 
-.support-contact__detail {
-  border-left: 2px solid rgba(56, 189, 248, 0.25);
+  .support-section__line {
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(56, 189, 248, 0.2) 50%,
+      transparent 100%
+    );
+  }
+
+  .support-contact__detail {
+    border-left: 2px solid rgba(56, 189, 248, 0.25);
+  }
+
 }

@@ -28,9 +28,9 @@ export default function EngineeringStandards() {
           </Reveal>
 
           <Reveal delay={0.1} variant="fadeIn">
-            <div className="standards-grid">
+            <div className="data-grid">
               {engineeringStandards.map(({ id, title, value }) => (
-                <div key={id} className="standards-grid__cell">
+                <div key={id} className="data-grid__cell">
                   <p className="font-sans text-[9px] font-medium uppercase tracking-[0.15em] text-white/35">
                     {title}
                   </p>

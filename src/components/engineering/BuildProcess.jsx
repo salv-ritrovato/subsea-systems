@@ -19,12 +19,12 @@ export default function BuildProcess() {
           </p>
         </Reveal>
 
-        <StaggerReveal className="engineering-timeline flex flex-col gap-10 md:gap-12" stagger={0.1}>
+        <StaggerReveal className="subsea-timeline flex flex-col gap-10 md:gap-12" stagger={0.1}>
           {buildPhases.map(({ id, phase, title, description }) => (
             <StaggerItem key={id}>
-              <article className="engineering-timeline__item flex gap-6 md:gap-8">
+              <article className="subsea-timeline__item flex gap-6 md:gap-8">
                 <div className="flex flex-col items-center pt-1.5">
-                  <span className="engineering-timeline__dot" aria-hidden="true" />
+                  <span className="subsea-timeline__dot" aria-hidden="true" />
                 </div>
                 <div className="pb-2">
                   <span className="font-sans text-[10px] font-medium uppercase tracking-[0.2em] text-sky-400/60">

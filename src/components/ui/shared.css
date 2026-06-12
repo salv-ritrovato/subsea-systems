@@ -1,0 +1,80 @@
+/* ── Shared component patterns ──────────────────────────────────────────────
+   Reusable visual patterns used across multiple pages/components.
+   Import this file once (index.css) to make these classes available globally.
+   ─────────────────────────────────────────────────────────────────────────── */
+
+@layer components {
+
+  /* Timeline — vertical connector line with dot markers.
+     Used by BuildProcess (engineering) and DepthZones (deep-ocean). */
+
+  .subsea-timeline {
+    position: relative;
+  }
+
+  .subsea-timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 19px;
+    width: 1px;
+    background: linear-gradient(
+      to bottom,
+      transparent,
+      rgba(56, 189, 248, 0.35) 10%,
+      rgba(56, 189, 248, 0.35) 90%,
+      transparent
+    );
+  }
+
+  @media (min-width: 768px) {
+    .subsea-timeline::before {
+      left: 23px;
+    }
+  }
+
+  .subsea-timeline__dot {
+    position: relative;
+    z-index: 1;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid rgba(56, 189, 248, 0.5);
+    background-color: #060c12;
+    box-shadow: 0 0 12px rgba(56, 189, 248, 0.25);
+    transition: box-shadow 0.3s ease;
+  }
+
+  .subsea-timeline__item:hover .subsea-timeline__dot {
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.45);
+  }
+
+  /* Data grid — 2-column bordered spec/stat table.
+     Used by EngineeringStandards and ObservationStats. */
+
+  .data-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .data-grid__cell {
+    padding: 1.75rem 1.5rem;
+  }
+
+  .data-grid__cell:not(:nth-child(-n + 2)) {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .data-grid__cell:not(:nth-child(2n + 1)) {
+    border-left: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  @media (min-width: 768px) {
+    .data-grid__cell {
+      padding: 2rem 1.75rem;
+    }
+  }
+
+}

@@ -1,51 +1,54 @@
 /* ── FAQ accordion ─────────────────────────────────────────────────────────── */
 
-.faq-accordion__icon {
-  position: relative;
-  width: 12px;
-  height: 12px;
-}
+@layer components {
 
-.faq-accordion__icon::before,
-.faq-accordion__icon::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 12px;
-  height: 1px;
-  background-color: rgba(255, 255, 255, 0.45);
-  transition: transform 0.3s ease;
-}
+  .faq-accordion__icon {
+    position: relative;
+    width: 12px;
+    height: 12px;
+  }
 
-.faq-accordion__icon::before {
-  transform: translate(-50%, -50%);
-}
+  .faq-accordion__icon::before,
+  .faq-accordion__icon::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 12px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.45);
+    transition: transform 0.3s ease;
+  }
 
-.faq-accordion__icon::after {
-  transform: translate(-50%, -50%) rotate(90deg);
-}
+  .faq-accordion__icon::before {
+    transform: translate(-50%, -50%);
+  }
 
-.faq-accordion__icon--open::after {
-  transform: translate(-50%, -50%) rotate(0deg);
-}
+  .faq-accordion__icon::after {
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
 
-.faq-accordion__panel {
-  display: grid;
-  grid-template-rows: 0fr;
-  transition: grid-template-rows 0.35s ease;
-}
+  .faq-accordion__icon--open::after {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
 
-.faq-accordion__panel-inner {
-  overflow: hidden;
-  min-height: 0;
-}
+  .faq-accordion__panel {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.35s ease;
+  }
 
-.faq-accordion__panel--open {
-  grid-template-rows: 1fr;
-}
+  .faq-accordion__panel-inner {
+    overflow: hidden;
+    min-height: 0;
+  }
 
-/* Cyan accent on the open item trigger */
-.faq-accordion__item:has(.faq-accordion__icon--open) .faq-accordion__trigger {
-  box-shadow: inset 2px 0 0 rgba(56, 189, 248, 0.45);
+  .faq-accordion__panel--open {
+    grid-template-rows: 1fr;
+  }
+
+  .faq-accordion__item:has(.faq-accordion__icon--open) .faq-accordion__trigger {
+    box-shadow: inset 2px 0 0 rgba(56, 189, 248, 0.45);
+  }
+
 }

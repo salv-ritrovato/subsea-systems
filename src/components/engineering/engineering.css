@@ -1,268 +1,202 @@
 /* ── Engineering page ──────────────────────────────────────────────────────── */
 
-.engineering-page {
-  overflow-x: clip;
-}
+@layer components {
 
-.engineering-hero {
-  position: relative;
-  min-height: 70svh;
-  display: flex;
-  align-items: flex-end;
-  background-color: #030609;
-}
+  .engineering-page {
+    overflow-x: clip;
+  }
 
-/* Section edge fades — overlap next section colour at boundaries */
-.engineering-fade-bottom {
-  pointer-events: none;
-  position: absolute;
-  inset-inline: 0;
-  bottom: 0;
-  z-index: 5;
-  height: 10rem;
-}
+  .engineering-hero {
+    position: relative;
+    min-height: 70svh;
+    display: flex;
+    align-items: flex-end;
+    background-color: #030609;
+  }
 
-.engineering-fade-bottom--to-build {
-  background: linear-gradient(
-    to bottom,
-    transparent 0%,
-    rgba(3, 6, 9, 0.4) 30%,
-    rgba(6, 12, 18, 0.85) 70%,
-    #060c12 100%
-  );
-}
-
-.engineering-fade-bottom--to-video {
-  z-index: 15;
-  height: 14rem;
-  background: linear-gradient(
-    to bottom,
-    transparent 0%,
-    rgba(6, 12, 18, 0.45) 20%,
-    rgba(4, 8, 14, 0.85) 50%,
-    rgba(3, 6, 9, 0.95) 78%,
-    #030609 100%
-  );
-}
-
-.engineering-fade-bottom--to-standards {
-  background: linear-gradient(
-    to bottom,
-    transparent 0%,
-    rgba(3, 6, 9, 0.5) 30%,
-    rgba(6, 12, 18, 0.9) 70%,
-    #060c12 100%
-  );
-}
-
-.engineering-fade-bottom--to-footer {
-  background: linear-gradient(
-    to bottom,
-    transparent 0%,
-    rgba(6, 12, 18, 0.4) 40%,
-    #040810 100%
-  );
-}
-
-.engineering-fade-top {
-  pointer-events: none;
-  position: absolute;
-  inset-inline: 0;
-  top: 0;
-  z-index: 5;
-  height: 6rem;
-}
-
-.engineering-fade-top--from-build {
-  background: linear-gradient(
-    to bottom,
-    #030609 0%,
-    rgba(3, 6, 9, 0.75) 35%,
-    rgba(3, 6, 9, 0.25) 65%,
-    transparent 100%
-  );
-}
-
-.engineering-fade-top--from-video {
-  background: linear-gradient(
-    to bottom,
-    #060c12 0%,
-    rgba(6, 12, 18, 0.85) 30%,
-    rgba(6, 12, 18, 0.35) 60%,
-    transparent 100%
-  );
-}
-
-/* Video section — bridge strip before video content */
-.engineering-video {
-  margin-top: -7rem;
-  background-color: #030609;
-}
-
-.engineering-video__bridge {
-  pointer-events: none;
-  position: relative;
-  z-index: 2;
-  height: 7rem;
-  background: linear-gradient(
-    180deg,
-    #060c12 0%,
-    #050a10 22%,
-    #040810 48%,
-    #030609 100%
-  );
-}
-
-/* Video edge fades — sit above the video element */
-.engineering-video__fade-top {
-  pointer-events: none;
-  position: absolute;
-  inset-inline: 0;
-  top: 0;
-  z-index: 4;
-  height: 38%;
-  background: linear-gradient(
-    to bottom,
-    #030609 0%,
-    #030609 10%,
-    rgba(3, 6, 9, 0.92) 28%,
-    rgba(3, 6, 9, 0.45) 55%,
-    transparent 100%
-  );
-}
-
-.engineering-video__fade-bottom {
-  pointer-events: none;
-  position: absolute;
-  inset-inline: 0;
-  bottom: 0;
-  z-index: 4;
-  height: 50%;
-  background: linear-gradient(
-    to bottom,
-    transparent 0%,
-    rgba(3, 6, 9, 0.35) 25%,
-    rgba(6, 12, 18, 0.75) 55%,
-    #060c12 100%
-  );
-}
-
-@media (min-width: 768px) {
+  /* Section edge fades — overlap next section colour at boundaries */
   .engineering-fade-bottom {
-    height: 12rem;
+    pointer-events: none;
+    position: absolute;
+    inset-inline: 0;
+    bottom: 0;
+    z-index: 5;
+    height: 10rem;
+  }
+
+  .engineering-fade-bottom--to-build {
+    background: linear-gradient(
+      to bottom,
+      transparent 0%,
+      rgba(3, 6, 9, 0.4) 30%,
+      rgba(6, 12, 18, 0.85) 70%,
+      #060c12 100%
+    );
   }
 
   .engineering-fade-bottom--to-video {
-    height: 16rem;
+    z-index: 15;
+    height: 14rem;
+    background: linear-gradient(
+      to bottom,
+      transparent 0%,
+      rgba(6, 12, 18, 0.45) 20%,
+      rgba(4, 8, 14, 0.85) 50%,
+      rgba(3, 6, 9, 0.95) 78%,
+      #030609 100%
+    );
+  }
+
+  .engineering-fade-bottom--to-standards {
+    background: linear-gradient(
+      to bottom,
+      transparent 0%,
+      rgba(3, 6, 9, 0.5) 30%,
+      rgba(6, 12, 18, 0.9) 70%,
+      #060c12 100%
+    );
+  }
+
+  .engineering-fade-bottom--to-footer {
+    background: linear-gradient(
+      to bottom,
+      transparent 0%,
+      rgba(6, 12, 18, 0.4) 40%,
+      #040810 100%
+    );
   }
 
   .engineering-fade-top {
-    height: 8rem;
+    pointer-events: none;
+    position: absolute;
+    inset-inline: 0;
+    top: 0;
+    z-index: 5;
+    height: 6rem;
   }
 
+  .engineering-fade-top--from-build {
+    background: linear-gradient(
+      to bottom,
+      #030609 0%,
+      rgba(3, 6, 9, 0.75) 35%,
+      rgba(3, 6, 9, 0.25) 65%,
+      transparent 100%
+    );
+  }
+
+  .engineering-fade-top--from-video {
+    background: linear-gradient(
+      to bottom,
+      #060c12 0%,
+      rgba(6, 12, 18, 0.85) 30%,
+      rgba(6, 12, 18, 0.35) 60%,
+      transparent 100%
+    );
+  }
+
+  /* Video section — bridge strip before video content */
   .engineering-video {
-    margin-top: -9rem;
+    margin-top: -7rem;
+    background-color: #030609;
   }
 
   .engineering-video__bridge {
-    height: 9rem;
+    pointer-events: none;
+    position: relative;
+    z-index: 2;
+    height: 7rem;
+    background: linear-gradient(
+      180deg,
+      #060c12 0%,
+      #050a10 22%,
+      #040810 48%,
+      #030609 100%
+    );
   }
 
   .engineering-video__fade-top {
-    height: 35%;
+    pointer-events: none;
+    position: absolute;
+    inset-inline: 0;
+    top: 0;
+    z-index: 4;
+    height: 38%;
+    background: linear-gradient(
+      to bottom,
+      #030609 0%,
+      #030609 10%,
+      rgba(3, 6, 9, 0.92) 28%,
+      rgba(3, 6, 9, 0.45) 55%,
+      transparent 100%
+    );
   }
 
   .engineering-video__fade-bottom {
-    height: 48%;
+    pointer-events: none;
+    position: absolute;
+    inset-inline: 0;
+    bottom: 0;
+    z-index: 4;
+    height: 50%;
+    background: linear-gradient(
+      to bottom,
+      transparent 0%,
+      rgba(3, 6, 9, 0.35) 25%,
+      rgba(6, 12, 18, 0.75) 55%,
+      #060c12 100%
+    );
   }
-}
 
-.engineering-hero__grid {
-  pointer-events: none;
-  position: absolute;
-  inset: 0;
-  opacity: 0.4;
-  background-image:
-    linear-gradient(rgba(56, 189, 248, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(56, 189, 248, 0.04) 1px, transparent 1px);
-  background-size: 48px 48px;
-  mask-image: linear-gradient(to bottom, black 30%, transparent 90%);
-}
+  @media (min-width: 768px) {
+    .engineering-fade-bottom {
+      height: 12rem;
+    }
 
-/* Build process timeline */
-.engineering-timeline {
-  position: relative;
-}
+    .engineering-fade-bottom--to-video {
+      height: 16rem;
+    }
 
-.engineering-timeline::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 19px;
-  width: 1px;
-  background: linear-gradient(
-    to bottom,
-    transparent,
-    rgba(56, 189, 248, 0.35) 10%,
-    rgba(56, 189, 248, 0.35) 90%,
-    transparent
-  );
-}
+    .engineering-fade-top {
+      height: 8rem;
+    }
 
-@media (min-width: 768px) {
-  .engineering-timeline::before {
-    left: 23px;
+    .engineering-video {
+      margin-top: -9rem;
+    }
+
+    .engineering-video__bridge {
+      height: 9rem;
+    }
+
+    .engineering-video__fade-top {
+      height: 35%;
+    }
+
+    .engineering-video__fade-bottom {
+      height: 48%;
+    }
   }
-}
 
-.engineering-timeline__dot {
-  position: relative;
-  z-index: 1;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  border: 1px solid rgba(56, 189, 248, 0.5);
-  background-color: #060c12;
-  box-shadow: 0 0 12px rgba(56, 189, 248, 0.25);
-  transition: box-shadow 0.3s ease;
-}
-
-.engineering-timeline__item:hover .engineering-timeline__dot {
-  box-shadow: 0 0 20px rgba(56, 189, 248, 0.45);
-}
-
-/* Video section */
-.engineering-video__grid {
-  opacity: 0.25;
-  background-image:
-    linear-gradient(rgba(56, 189, 248, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(56, 189, 248, 0.05) 1px, transparent 1px);
-  background-size: 48px 48px;
-  mask-image: linear-gradient(to right, black 20%, transparent 70%);
-}
-
-/* Standards spec grid */
-.standards-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.standards-grid__cell {
-  padding: 1.75rem 1.5rem;
-}
-
-.standards-grid__cell:not(:nth-child(-n + 2)) {
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.standards-grid__cell:not(:nth-child(2n + 1)) {
-  border-left: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-@media (min-width: 768px) {
-  .standards-grid__cell {
-    padding: 2rem 1.75rem;
+  .engineering-hero__grid {
+    pointer-events: none;
+    position: absolute;
+    inset: 0;
+    opacity: 0.4;
+    background-image:
+      linear-gradient(rgba(56, 189, 248, 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(56, 189, 248, 0.04) 1px, transparent 1px);
+    background-size: 48px 48px;
+    mask-image: linear-gradient(to bottom, black 30%, transparent 90%);
   }
+
+  .engineering-video__grid {
+    opacity: 0.25;
+    background-image:
+      linear-gradient(rgba(56, 189, 248, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(56, 189, 248, 0.05) 1px, transparent 1px);
+    background-size: 48px 48px;
+    mask-image: linear-gradient(to right, black 20%, transparent 70%);
+  }
+
 }

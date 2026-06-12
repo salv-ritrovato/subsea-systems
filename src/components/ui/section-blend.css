@@ -1,87 +1,48 @@
 /* ── Section transition bridge ─────────────────────────────────────────────── */
 
-.section-blend {
-  pointer-events: none;
-  position: relative;
-  z-index: 2;
-  height: 9rem;
-  margin-block: -4.5rem;
-}
+@layer components {
 
-@media (min-width: 768px) {
   .section-blend {
-    height: 11rem;
-    margin-block: -5.5rem;
+    pointer-events: none;
+    position: relative;
+    z-index: 2;
+    height: 9rem;
+    margin-block: -4.5rem;
   }
-}
 
-.section-blend--rovers-exploration {
-  background: linear-gradient(
-    180deg,
-    #060c12 0%,
-    #050a10 28%,
-    #040810 72%,
-    #040810 100%
-  );
-}
+  @media (min-width: 768px) {
+    .section-blend {
+      height: 11rem;
+      margin-block: -5.5rem;
+    }
+  }
 
-.section-blend--exploration-fleet {
-  background: linear-gradient(
-    180deg,
-    #040810 0%,
-    #030609 30%,
-    #020508 70%,
-    #020508 100%
-  );
-}
+  .section-blend--rovers-exploration {
+    background: linear-gradient(180deg, #060c12 0%, #050a10 28%, #040810 72%, #040810 100%);
+  }
 
-.section-blend--fleet-support {
-  background: linear-gradient(
-    180deg,
-    #020508 0%,
-    #040810 30%,
-    #060c12 70%,
-    #060c12 100%
-  );
-}
+  .section-blend--exploration-fleet {
+    background: linear-gradient(180deg, #040810 0%, #030609 30%, #020508 70%, #020508 100%);
+  }
 
-/* Engineering page */
-.section-blend--engineering-hero-build {
-  background: linear-gradient(
-    180deg,
-    #030609 0%,
-    #040810 30%,
-    #060c12 70%,
-    #060c12 100%
-  );
-}
+  .section-blend--fleet-support {
+    background: linear-gradient(180deg, #020508 0%, #040810 30%, #060c12 70%, #060c12 100%);
+  }
 
-.section-blend--engineering-build-video {
-  background: linear-gradient(
-    180deg,
-    #060c12 0%,
-    #040810 30%,
-    #030609 70%,
-    #030609 100%
-  );
-}
+  .section-blend--engineering-hero-build {
+    background: linear-gradient(180deg, #030609 0%, #040810 30%, #060c12 70%, #060c12 100%);
+  }
 
-.section-blend--engineering-video-standards {
-  background: linear-gradient(
-    180deg,
-    #030609 0%,
-    #040810 30%,
-    #060c12 70%,
-    #060c12 100%
-  );
-}
+  .section-blend--engineering-build-video {
+    background: linear-gradient(180deg, #060c12 0%, #040810 30%, #030609 70%, #030609 100%);
+  }
 
-.section-blend--engineering-standards-footer {
-  background: linear-gradient(
-    180deg,
-    #060c12 0%,
-    #050a10 35%,
-    #040810 75%,
-    #040810 100%
-  );
+  .section-blend--engineering-video-standards {
+    background: linear-gradient(180deg, #030609 0%, #040810 30%, #060c12 70%, #060c12 100%);
+  }
+
+  .section-blend--engineering-standards-footer {
+    background: linear-gradient(180deg, #060c12 0%, #050a10 35%, #040810 75%, #040810 100%);
+  }
+
 }

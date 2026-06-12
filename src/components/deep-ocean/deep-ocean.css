@@ -1,145 +1,80 @@
 /* ── Deep Ocean page ─────────────────────────────────────────────────────────── */
 
-.deep-ocean-page {
-  overflow-x: clip;
-}
+@layer components {
 
-.deep-ocean-hero {
-  position: relative;
-  min-height: 70svh;
-  display: flex;
-  align-items: flex-end;
-  background-color: #030609;
-}
+  .deep-ocean-page {
+    overflow-x: clip;
+  }
 
-/* Section edge fades */
-.deep-ocean-fade-bottom {
-  pointer-events: none;
-  position: absolute;
-  inset-inline: 0;
-  bottom: 0;
-  z-index: 5;
-  height: 10rem;
-}
+  .deep-ocean-hero {
+    position: relative;
+    min-height: 70svh;
+    display: flex;
+    align-items: flex-end;
+    background-color: #030609;
+  }
 
-.deep-ocean-fade-bottom--to-zones {
-  background: linear-gradient(
-    to bottom,
-    transparent 0%,
-    rgba(3, 6, 9, 0.4) 30%,
-    rgba(6, 12, 18, 0.85) 70%,
-    #060c12 100%
-  );
-}
-
-.deep-ocean-fade-bottom--to-stats {
-  z-index: 15;
-  height: 7rem;
-  background: linear-gradient(
-    to bottom,
-    transparent 0%,
-    rgba(6, 12, 18, 0.45) 30%,
-    rgba(4, 8, 14, 0.85) 65%,
-    #030609 100%
-  );
-}
-
-.deep-ocean-fade-bottom--to-footer {
-  background: linear-gradient(
-    to bottom,
-    transparent 0%,
-    rgba(6, 12, 18, 0.4) 40%,
-    #040810 100%
-  );
-}
-
-@media (min-width: 768px) {
+  /* Section edge fades */
   .deep-ocean-fade-bottom {
-    height: 12rem;
+    pointer-events: none;
+    position: absolute;
+    inset-inline: 0;
+    bottom: 0;
+    z-index: 5;
+    height: 10rem;
+  }
+
+  .deep-ocean-fade-bottom--to-zones {
+    background: linear-gradient(
+      to bottom,
+      transparent 0%,
+      rgba(3, 6, 9, 0.4) 30%,
+      rgba(6, 12, 18, 0.85) 70%,
+      #060c12 100%
+    );
   }
 
   .deep-ocean-fade-bottom--to-stats {
-    height: 8rem;
+    z-index: 15;
+    height: 7rem;
+    background: linear-gradient(
+      to bottom,
+      transparent 0%,
+      rgba(6, 12, 18, 0.45) 30%,
+      rgba(4, 8, 14, 0.85) 65%,
+      #030609 100%
+    );
   }
-}
 
-/* Hero grid overlay */
-.deep-ocean-hero__grid {
-  pointer-events: none;
-  position: absolute;
-  inset: 0;
-  opacity: 0.3;
-  background-image:
-    linear-gradient(rgba(56, 189, 248, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(56, 189, 248, 0.04) 1px, transparent 1px);
-  background-size: 48px 48px;
-  mask-image: linear-gradient(to bottom, black 20%, transparent 85%);
-}
-
-/* Depth zones timeline */
-.deep-ocean-timeline {
-  position: relative;
-}
-
-.deep-ocean-timeline::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 19px;
-  width: 1px;
-  background: linear-gradient(
-    to bottom,
-    transparent,
-    rgba(56, 189, 248, 0.35) 10%,
-    rgba(56, 189, 248, 0.35) 90%,
-    transparent
-  );
-}
-
-@media (min-width: 768px) {
-  .deep-ocean-timeline::before {
-    left: 23px;
+  .deep-ocean-fade-bottom--to-footer {
+    background: linear-gradient(
+      to bottom,
+      transparent 0%,
+      rgba(6, 12, 18, 0.4) 40%,
+      #040810 100%
+    );
   }
-}
 
-.deep-ocean-timeline__dot {
-  position: relative;
-  z-index: 1;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  border: 1px solid rgba(56, 189, 248, 0.5);
-  background-color: #060c12;
-  box-shadow: 0 0 12px rgba(56, 189, 248, 0.25);
-  transition: box-shadow 0.3s ease;
-}
+  @media (min-width: 768px) {
+    .deep-ocean-fade-bottom {
+      height: 12rem;
+    }
 
-.deep-ocean-timeline__item:hover .deep-ocean-timeline__dot {
-  box-shadow: 0 0 20px rgba(56, 189, 248, 0.45);
-}
-
-/* Observation stats grid */
-.observation-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.observation-grid__cell {
-  padding: 1.75rem 1.5rem;
-}
-
-.observation-grid__cell:not(:nth-child(-n + 2)) {
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.observation-grid__cell:not(:nth-child(2n + 1)) {
-  border-left: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-@media (min-width: 768px) {
-  .observation-grid__cell {
-    padding: 2rem 1.75rem;
+    .deep-ocean-fade-bottom--to-stats {
+      height: 8rem;
+    }
   }
+
+  .deep-ocean-hero__grid {
+    pointer-events: none;
+    position: absolute;
+    inset: 0;
+    opacity: 0.3;
+    background-image:
+      linear-gradient(rgba(56, 189, 248, 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(56, 189, 248, 0.04) 1px, transparent 1px);
+    background-size: 48px 48px;
+    mask-image: linear-gradient(to bottom, black 20%, transparent 85%);
+  }
+
 }

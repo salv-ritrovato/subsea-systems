@@ -1,109 +1,101 @@
 /* ── Deep Sea Exploration section ─────────────────────────────────────────── */
 
-.exploration-section {
-  position: relative;
-  overflow: hidden;
-  background-color: #040810;
-}
+@layer components {
 
-/* Ambient depth glow — kept away from top edge to preserve section blend */
-.exploration-section__ambient {
-  pointer-events: none;
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(ellipse 70% 55% at 50% 45%, rgba(14, 116, 144, 0.12) 0%, transparent 65%),
-    radial-gradient(ellipse 60% 40% at 80% 100%, rgba(30, 58, 138, 0.12) 0%, transparent 55%);
-}
-
-/* Sonar sweep line beneath header */
-.exploration-section__sonar {
-  height: 1px;
-  background: linear-gradient(
-    90deg,
-    transparent 0%,
-    rgba(56, 189, 248, 0.15) 25%,
-    rgba(56, 189, 248, 0.6) 50%,
-    rgba(56, 189, 248, 0.15) 75%,
-    transparent 100%
-  );
-  background-size: 200% 100%;
-  animation: exploration-sonar 6s ease-in-out infinite;
-}
-
-@keyframes exploration-sonar {
-  0% {
-    background-position: 200% 0;
+  .exploration-section {
+    position: relative;
+    overflow: hidden;
+    background-color: #040810;
   }
-  100% {
-    background-position: -200% 0;
+
+  .exploration-section__ambient {
+    pointer-events: none;
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 70% 55% at 50% 45%, rgba(14, 116, 144, 0.12) 0%, transparent 65%),
+      radial-gradient(ellipse 60% 40% at 80% 100%, rgba(30, 58, 138, 0.12) 0%, transparent 55%);
   }
-}
 
-/* Bento grid */
-.exploration-grid {
-  display: grid;
-  gap: 1rem;
-}
+  .exploration-section__sonar {
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(56, 189, 248, 0.15) 25%,
+      rgba(56, 189, 248, 0.6) 50%,
+      rgba(56, 189, 248, 0.15) 75%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    animation: exploration-sonar 6s ease-in-out infinite;
+  }
 
-@media (min-width: 768px) {
+  @keyframes exploration-sonar {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+  }
+
   .exploration-grid {
-    grid-template-columns: 1.15fr 1fr;
-    grid-template-rows: repeat(3, minmax(200px, 1fr));
-    gap: 1.25rem;
+    display: grid;
+    gap: 1rem;
   }
 
-  .exploration-card--featured {
-    grid-row: span 3;
+  @media (min-width: 768px) {
+    .exploration-grid {
+      grid-template-columns: 1.15fr 1fr;
+      grid-template-rows: repeat(3, minmax(200px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .exploration-card--featured {
+      grid-row: span 3;
+    }
   }
-}
 
-/* Card */
-.exploration-card {
-  position: relative;
-  min-height: 320px;
-  overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  transition:
-    border-color 0.4s ease,
-    box-shadow 0.4s ease;
-}
-
-.exploration-card--featured {
-  min-height: 420px;
-}
-
-@media (min-width: 768px) {
   .exploration-card {
-    min-height: 0;
+    position: relative;
+    min-height: 320px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition:
+      border-color 0.4s ease,
+      box-shadow 0.4s ease;
   }
 
   .exploration-card--featured {
-    min-height: 0;
+    min-height: 420px;
   }
-}
 
-.exploration-card:hover {
-  border-color: rgba(56, 189, 248, 0.25);
-  box-shadow: 0 0 40px rgba(14, 116, 144, 0.12);
-}
+  @media (min-width: 768px) {
+    .exploration-card,
+    .exploration-card--featured {
+      min-height: 0;
+    }
+  }
 
-.exploration-card__image {
-  transition: transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
+  .exploration-card:hover {
+    border-color: rgba(56, 189, 248, 0.25);
+    box-shadow: 0 0 40px rgba(14, 116, 144, 0.12);
+  }
 
-.exploration-card:hover .exploration-card__image {
-  transform: scale(1.05);
-}
+  .exploration-card__image {
+    transition: transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
 
-/* Bioluminescent glow on jellyfish card */
-.exploration-card--glow:hover {
-  box-shadow:
-    0 0 50px rgba(56, 189, 248, 0.15),
-    inset 0 0 60px rgba(56, 189, 248, 0.04);
-}
+  .exploration-card:hover .exploration-card__image {
+    transform: scale(1.05);
+  }
 
-.exploration-card__index {
-  font-variant-numeric: tabular-nums;
-  letter-spacing: 0.15em;
+  .exploration-card--glow:hover {
+    box-shadow:
+      0 0 50px rgba(56, 189, 248, 0.15),
+      inset 0 0 60px rgba(56, 189, 248, 0.04);
+  }
+
+  .exploration-card__index {
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.15em;
+  }
+
 }

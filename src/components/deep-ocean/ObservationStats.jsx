@@ -31,9 +31,9 @@ export default function ObservationStats() {
           </Reveal>
 
           <Reveal delay={0.1} variant="fadeIn">
-            <div className="observation-grid">
+            <div className="data-grid">
               {observationStats.map(({ id, title, value }) => (
-                <div key={id} className="observation-grid__cell">
+                <div key={id} className="data-grid__cell">
                   <p className="font-sans text-[9px] font-medium uppercase tracking-[0.15em] text-white/35">
                     {title}
                   </p>
