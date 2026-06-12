@@ -49,6 +49,7 @@ export const buildPhases = [
 
 export const engineeringVideo = {
   src: '/videos/5497-184226939.mp4',
+  poster: '/pictures/this_is_engineering-engineer-4915794.jpg',
   label: 'Fabrication',
   title: 'Assembly in motion',
   description:

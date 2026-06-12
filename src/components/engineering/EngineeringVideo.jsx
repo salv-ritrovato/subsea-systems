@@ -3,7 +3,7 @@ import Reveal from '../ui/Reveal'
 import './engineering.css'
 
 export default function EngineeringVideo() {
-  const { src, label, title, description, highlights } = engineeringVideo
+  const { src, poster, label, title, description, highlights } = engineeringVideo
 
   return (
     <section className="engineering-video relative">
@@ -14,10 +14,12 @@ export default function EngineeringVideo() {
         <video
           className="absolute inset-0 h-full w-full object-cover"
           src={src}
+          poster={poster}
           autoPlay
           muted
           loop
           playsInline
+          preload="none"
           aria-hidden="true"
         />
 
