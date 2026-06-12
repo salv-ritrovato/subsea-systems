@@ -34,9 +34,9 @@ export default function Hero() {
 
       {prefersReducedMotion ? (
         <div className="relative z-10 px-8 pb-10 text-center text-white">
-          <p className="font-serif text-4xl font-light italic tracking-wide md:text-5xl lg:text-6xl">
+          <h1 className="font-serif text-4xl font-light italic tracking-wide md:text-5xl lg:text-6xl">
             Engineering the deep.
-          </p>
+          </h1>
         </div>
       ) : (
         <motion.div
@@ -45,14 +45,14 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ ...defaultTransition, duration: 1.1, delay: 0.45 }}
         >
-          <motion.p
+          <motion.h1
             className="font-serif text-4xl font-light italic tracking-wide md:text-5xl lg:text-6xl"
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ ...defaultTransition, duration: 1, delay: 0.65 }}
           >
             Engineering the deep.
-          </motion.p>
+          </motion.h1>
         </motion.div>
       )}
 
