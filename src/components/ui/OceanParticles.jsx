@@ -4,6 +4,7 @@ import { loadSlim } from '@tsparticles/slim'
 
 const configs = {
   deep: {
+    fullScreen: { enable: false },
     particles: {
       number: { value: 55, density: { enable: true } },
       color: { value: ['#38bdf8', '#67e8f9', '#a5f3fc', '#e0f2fe'] },
@@ -28,6 +29,7 @@ const configs = {
   },
 
   bioluminescent: {
+    fullScreen: { enable: false },
     particles: {
       number: { value: 90, density: { enable: true } },
       color: { value: ['#22d3ee', '#38bdf8', '#7dd3fc', '#bae6fd', '#a78bfa'] },
