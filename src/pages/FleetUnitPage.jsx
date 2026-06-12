@@ -55,6 +55,7 @@ export default function FleetUnitPage() {
             src={unit.image}
             alt={unit.imageAlt}
             className="h-full w-full object-cover opacity-60"
+            fetchpriority="high"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-[#030609]/40 via-transparent to-[#030609]" aria-hidden="true" />
           <div className="absolute inset-x-0 bottom-0 h-64 bg-gradient-to-t from-[#030609] via-[#030609]/80 to-transparent" aria-hidden="true" />

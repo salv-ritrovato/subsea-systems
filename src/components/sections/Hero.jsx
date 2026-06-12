@@ -1,8 +1,6 @@
 import { motion } from 'framer-motion'
 import { defaultTransition } from '../../lib/motionVariants'
 import { siteConfig } from '../../data/siteConfig'
-import { lazy, Suspense } from 'react'
-const OceanParticles = lazy(() => import('../ui/OceanParticles'))
 
 const HERO_VIDEO = '/videos/10480-224857514.mp4'
 
@@ -20,17 +18,11 @@ export default function Hero() {
         aria-hidden="true"
       />
 
-      {/* Top vignette — navbar readability */}
       <div
         className="absolute inset-0 bg-gradient-to-b from-[rgba(6,12,18,0.45)] via-transparent to-transparent"
         aria-hidden="true"
       />
 
-      <Suspense fallback={null}>
-        <OceanParticles variant="deep" />
-      </Suspense>
-
-      {/* Bottom fade — blends video into the section below */}
       <div
         className="pointer-events-none absolute inset-x-0 bottom-0 h-[50%] bg-[linear-gradient(to_bottom,transparent_0%,rgba(6,12,18,0.35)_30%,rgba(6,12,18,0.85)_70%,#060c12_100%)]"
         aria-hidden="true"

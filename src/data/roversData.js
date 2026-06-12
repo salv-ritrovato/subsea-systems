@@ -4,7 +4,7 @@
 export const roversCards = [
   {
     id: 'depth-autonomy',
-    image: '/pictures/seth0s-dive-677990.jpg',
+    image: '/pictures/seth0s-dive-677990.webp',
     imageAlt: 'Vintage deep-sea diving helmet suspended in teal-lit darkness',
     title: 'Beyond Diver Limits',
     description:
@@ -12,7 +12,7 @@ export const roversCards = [
   },
   {
     id: 'acoustic-survey',
-    image: '/pictures/wikiimages-radar-dome-67536.jpg',
+    image: '/pictures/wikiimages-radar-dome-67536.webp',
     imageAlt: 'Geodesic radar domes glowing at twilight',
     title: '360° Subsea Awareness',
     description:
@@ -20,7 +20,7 @@ export const roversCards = [
   },
   {
     id: 'zero-intervention',
-    image: '/pictures/sarah-lee-QURU8IY-RaI-unsplash.jpg',
+    image: '/pictures/sarah-lee-QURU8IY-RaI-unsplash.webp',
     imageAlt: 'Underwater light rays piercing deep blue water with rising bubbles',
     title: 'Zero Surface Intervention',
     description:

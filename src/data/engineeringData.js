@@ -2,7 +2,7 @@
  * Engineering page content — build process, video, and standards.
  */
 export const engineeringHero = {
-  image: '/pictures/this_is_engineering-engineer-4915794.jpg',
+  image: '/pictures/this_is_engineering-engineer-4915794.webp',
   imageAlt: 'Engineer precision-machining a subsea component under teal workshop lighting',
   title: 'Precision engineering for the abyss',
   subtitle:
@@ -49,7 +49,7 @@ export const buildPhases = [
 
 export const engineeringVideo = {
   src: '/videos/5497-184226939.mp4',
-  poster: '/pictures/this_is_engineering-engineer-4915794.jpg',
+  poster: '/pictures/this_is_engineering-engineer-4915794.webp',
   label: 'Fabrication',
   title: 'Assembly in motion',
   description:

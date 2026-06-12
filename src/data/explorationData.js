@@ -4,7 +4,7 @@
 export const explorationCards = [
   {
     id: 'pelagic-encounters',
-    image: '/pictures/franziska_stier-manta-9757343.jpg',
+    image: '/pictures/franziska_stier-manta-9757343.webp',
     imageAlt: 'Silhouette of a manta ray and diver descending into deep blue water',
     title: 'Pelagic Encounters',
     description:
@@ -13,7 +13,7 @@ export const explorationCards = [
   },
   {
     id: 'reef-mapping',
-    image: '/pictures/publicdomainpictures-animal-21668.jpg',
+    image: '/pictures/publicdomainpictures-animal-21668.webp',
     imageAlt: 'School of silver fish weaving through a dark coral reef',
     title: 'Reef Ecosystem Mapping',
     description:
@@ -22,7 +22,7 @@ export const explorationCards = [
   },
   {
     id: 'low-light-biology',
-    image: '/pictures/tyna_janoch-jellyfish-7704801.jpg',
+    image: '/pictures/tyna_janoch-jellyfish-7704801.webp',
     imageAlt: 'Bioluminescent jellyfish drifting through dark blue water',
     title: 'Low-Light Biology',
     description:

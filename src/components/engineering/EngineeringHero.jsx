@@ -13,6 +13,7 @@ export default function EngineeringHero() {
           src={engineeringHero.image}
           alt={engineeringHero.imageAlt}
           className="h-full w-full object-cover object-[center_20%]"
+          fetchpriority="high"
         />
         <div
           className="absolute inset-0 bg-gradient-to-b from-[#030609]/60 via-[#030609]/40 to-[#030609]"

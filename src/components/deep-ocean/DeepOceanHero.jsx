@@ -2,8 +2,6 @@ import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { deepOceanHero } from '../../data/deepOceanData'
 import { defaultTransition } from '../../lib/motionVariants'
-import { lazy, Suspense } from 'react'
-const OceanParticles = lazy(() => import('../ui/OceanParticles'))
 import './deep-ocean.css'
 
 const JELLYFISH_VIDEO = '/videos/213616.mp4'
@@ -32,10 +30,6 @@ export default function DeepOceanHero() {
           aria-hidden="true"
         />
       </div>
-
-      <Suspense fallback={null}>
-        <OceanParticles variant="bioluminescent" />
-      </Suspense>
 
       <div className="deep-ocean-hero__grid" aria-hidden="true" />
       <div className="deep-ocean-fade-bottom deep-ocean-fade-bottom--to-zones" aria-hidden="true" />

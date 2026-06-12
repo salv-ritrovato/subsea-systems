@@ -35,7 +35,7 @@ export const depthZones = [
     name: 'Midnight Zone',
     description:
       'Permanent darkness. Pressure exceeds 400 atmospheres. Gelatinous organisms and chemosynthetic communities dominate — life forms that have never seen sunlight and were unknown to science a century ago.',
-    image: '/pictures/9624038-jellyfish-3609068.jpg',
+    image: '/pictures/9624038-jellyfish-3609068.webp',
     imageAlt: 'Translucent jellyfish suspended in total darkness',
   },
   {
@@ -44,7 +44,7 @@ export const depthZones = [
     name: 'Abyssal Zone',
     description:
       'The largest habitat on Earth, covering over half the ocean floor. Sediment plains, abyssal hills, and hydrothermal vent fields — ecosystems running entirely on geothermal energy. Our Explorer 3000 operates continuously at these depths.',
-    image: '/pictures/jeremy-bishop-G9i_plbfDgk-unsplash.jpg',
+    image: '/pictures/jeremy-bishop-G9i_plbfDgk-unsplash.webp',
     imageAlt: 'Deep ocean floor in near-total darkness',
   },
   {
@@ -53,7 +53,7 @@ export const depthZones = [
     name: 'Hadal Zone',
     description:
       'The ocean trenches. Crushing pressures, near-freezing temperatures, and complete isolation. Depths beyond current platform ratings — the next frontier for autonomous deep-water exploration.',
-    image: '/pictures/alex_rainer-ZX30k2e8AjM-unsplash.jpg',
+    image: '/pictures/alex_rainer-ZX30k2e8AjM-unsplash.webp',
     imageAlt: 'Ocean trench in complete darkness',
     imagePosition: 'object-center',
   },

@@ -43,7 +43,7 @@ export const fleetUnits = [
     slug: 'explorer-3000',
     name: 'Explorer 3000',
     tagline: 'Work-class intervention ROV',
-    image: '/pictures/9f9814e8-886e-41ee-9881-a1ce06ef3e64.png',
+    image: '/pictures/9f9814e8-886e-41ee-9881-a1ce06ef3e64.webp',
     imageAlt: 'Explorer 3000 ROV with manipulator arm operating on the seabed',
     description:
       'Our flagship work-class unit — dual floodlights, precision manipulator, and closed-loop station-keeping for pipeline inspection, salvage, and subsea construction support.',
@@ -79,7 +79,7 @@ export const fleetUnits = [
     slug: 'aegis-one',
     name: 'Aegis One',
     tagline: 'AI-guided autonomous submarine',
-    image: '/pictures/marc-antoine-dery-Klikhd4zT6A-unsplash.jpg',
+    image: '/pictures/marc-antoine-dery-Klikhd4zT6A-unsplash.webp',
     imageAlt: 'Stealth submarine hull at dusk with active sensor lighting',
     description:
       'Fully autonomous submarine platform with onboard AI navigation — long-range patrol, covert survey, and deep-water missions without surface tether or human piloting.',
