@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { navigationLinks, secondaryNavLinks } from '../../data/navigationData'
-import { getLenis } from '../../lib/useLenis'
 import './navbar.css'
 
 const FOCUSABLE = 'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])'
@@ -14,18 +13,8 @@ export default function MobileMenu({ className = '' }) {
   const closeMenu = () => setIsOpen(false)
 
   useEffect(() => {
-    const lenis = getLenis()
-    if (isOpen) {
-      lenis?.stop()
-      document.body.style.overflow = 'hidden'
-    } else {
-      lenis?.start()
-      document.body.style.overflow = ''
-    }
-    return () => {
-      lenis?.start()
-      document.body.style.overflow = ''
-    }
+    document.body.style.overflow = isOpen ? 'hidden' : ''
+    return () => { document.body.style.overflow = '' }
   }, [isOpen])
 
   // Move focus into panel when opened; restore to toggle when closed
