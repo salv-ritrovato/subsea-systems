@@ -9,11 +9,11 @@ export default function Footer() {
   return (
     <footer className="border-t border-white/6 bg-[#040810] px-8 py-12 md:px-12 md:py-14">
       <StaggerReveal
-        className="mx-auto flex max-w-6xl flex-col gap-10 md:flex-row md:items-start md:justify-between"
+        className="mx-auto flex max-w-6xl flex-col items-center gap-10 md:flex-row md:items-start md:justify-between"
         amount={0.2}
       >
         <StaggerItem>
-          <div>
+          <div className="flex flex-col items-center text-center md:items-start md:text-left">
             <Logo className="opacity-80" />
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/40">
               {siteConfig.tagline}
@@ -22,11 +22,11 @@ export default function Footer() {
         </StaggerItem>
 
         <StaggerItem>
-          <nav aria-label="Footer navigation">
+          <nav aria-label="Footer navigation" className="flex flex-col items-center md:items-start">
             <p className="mb-4 font-sans text-[9px] font-medium uppercase tracking-[0.18em] text-white/25">
               Pages
             </p>
-            <ul className="flex flex-col gap-3">
+            <ul className="flex flex-col items-center gap-3 md:items-start">
               {footerLinks.map(({ label, to }) => (
                 <li key={to}>
                   <Link
@@ -42,16 +42,16 @@ export default function Footer() {
         </StaggerItem>
 
         <StaggerItem>
-          <nav aria-label="Fleet products">
+          <nav aria-label="Fleet products" className="flex flex-col items-center md:items-start">
             <p className="mb-4 font-sans text-[9px] font-medium uppercase tracking-[0.18em] text-white/25">
               Fleet
             </p>
-            <ul className="flex flex-col gap-3">
+            <ul className="flex flex-col items-center gap-3 md:items-start">
               {fleetUnits.map(({ slug, name, tagline }) => (
                 <li key={slug}>
                   <Link
                     to={`/fleet/${slug}`}
-                    className="group flex flex-col font-sans transition-opacity duration-300 hover:opacity-80"
+                    className="group flex flex-col items-center font-sans transition-opacity duration-300 hover:opacity-80 md:items-start"
                   >
                     <span className="text-[11px] font-medium uppercase tracking-[0.16em] text-white/45">
                       {name}
@@ -67,7 +67,7 @@ export default function Footer() {
         </StaggerItem>
 
         <StaggerItem>
-          <div className="flex flex-col gap-3 md:items-end">
+          <div className="flex flex-col items-center gap-3 md:items-end">
             <a
               href={siteConfig.social.linkedin}
               target="_blank"
