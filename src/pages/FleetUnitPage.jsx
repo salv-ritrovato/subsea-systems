@@ -125,10 +125,10 @@ export default function FleetUnitPage() {
             <div className={`border ${c.border} divide-y divide-white/6`}>
               {unit.fullSpecs.map(({ label, value }) => (
                 <div key={label} className="flex items-start justify-between gap-4 px-5 py-3.5">
-                  <span className="font-sans text-[10px] uppercase tracking-[0.15em] text-white/40">
+                  <span className="shrink-0 font-sans text-[10px] uppercase tracking-[0.15em] text-white/40">
                     {label}
                   </span>
-                  <span className={`font-serif text-lg font-light ${c.text} tabular-nums`}>
+                  <span className={`text-right font-serif text-lg font-light ${c.text} tabular-nums`}>
                     {value}
                   </span>
                 </div>
