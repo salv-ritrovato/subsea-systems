@@ -21,6 +21,10 @@ export const siteConfig = {
       description:
         'Explore the ocean depth zones, from the sunlight surface to the hadal trenches. Data and observations from active Subsea Systems deployments.',
     },
+    fleetUnit: (name, tagline) => ({
+      title: `${name} — Subsea Systems Fleet`,
+      description: `${name}: ${tagline}. Full specifications, capabilities, and deployment details.`,
+    }),
     notFound: {
       title: '404 — Page not found · Subsea Systems',
       description: 'The page you are looking for does not exist.',

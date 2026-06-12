@@ -1,7 +1,10 @@
+import { Link } from 'react-router-dom'
+
 /**
  * Single fleet unit — diagonal image panel + technical spec dossier.
  */
 export default function FleetUnit({
+  slug,
   name,
   tagline,
   image,
@@ -47,6 +50,13 @@ export default function FleetUnit({
           {tagline}
         </p>
         <p className="mt-5 max-w-md text-sm leading-relaxed text-white/55">{description}</p>
+
+        <Link
+          to={`/fleet/${slug}`}
+          className="mt-7 inline-block font-sans text-[10px] font-medium uppercase tracking-[0.18em] text-white/45 transition-colors duration-300 hover:text-white/80"
+        >
+          Full specifications →
+        </Link>
 
         <dl className="mt-8 grid grid-cols-2 gap-3">
           {specs.map(({ label, value }) => (

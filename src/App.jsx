@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage'
 import EngineeringPage from './pages/EngineeringPage'
 import DeepOceanPage from './pages/DeepOceanPage'
 import NotFoundPage from './pages/NotFoundPage'
+import FleetUnitPage from './pages/FleetUnitPage'
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/engineering" element={<EngineeringPage />} />
           <Route path="/deep-ocean" element={<DeepOceanPage />} />
+          <Route path="/fleet/:slug" element={<FleetUnitPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>

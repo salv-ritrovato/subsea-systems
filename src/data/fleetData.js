@@ -1,9 +1,10 @@
 /**
- * Fleet lineup — units, specs, and imagery for the Fleet section.
+ * Fleet lineup — units, specs, and imagery for the Fleet section and product pages.
  */
 export const fleetUnits = [
   {
     id: 'sentinel-i7',
+    slug: 'sentinel-i7',
     name: 'Sentinel I7',
     tagline: 'Shallow-water reconnaissance',
     image: '/pictures/jakob-owens-GxJKG6adI3g-unsplash.jpg',
@@ -17,9 +18,29 @@ export const fleetUnits = [
       { label: 'Transit speed', value: '4 kn' },
     ],
     accent: 'cyan',
+    fullSpecs: [
+      { label: 'Depth rating', value: '300 m' },
+      { label: 'Endurance', value: '36 h' },
+      { label: 'Payload', value: '4K optical array' },
+      { label: 'Transit speed', value: '4 kn' },
+      { label: 'Hull material', value: 'Anodised 6061-T6' },
+      { label: 'Thrusters', value: '4 × vectored' },
+      { label: 'Navigation', value: 'DVL + INS' },
+      { label: 'Comms', value: 'Fibre tether / Wi-Fi surface' },
+      { label: 'Weight in air', value: '18 kg' },
+      { label: 'Deployment', value: 'Single operator, <5 min' },
+    ],
+    highlights: [
+      'Rapid single-operator launch from RIB or vessel',
+      'Full HD + 4K optical payload with active lighting',
+      'Integrated DVL for station-keeping in current',
+      'Battery hot-swap for continuous survey shifts',
+    ],
+    useCases: ['Coastal infrastructure inspection', 'Port & harbour surveys', 'Search & recovery', 'Environmental monitoring'],
   },
   {
     id: 'explorer-3000',
+    slug: 'explorer-3000',
     name: 'Explorer 3000',
     tagline: 'Work-class intervention ROV',
     image: '/pictures/9f9814e8-886e-41ee-9881-a1ce06ef3e64.png',
@@ -33,9 +54,29 @@ export const fleetUnits = [
       { label: 'Tether length', value: '2,000 m' },
     ],
     accent: 'amber',
+    fullSpecs: [
+      { label: 'Depth rating', value: '4,000 m' },
+      { label: 'Endurance', value: '72 h' },
+      { label: 'Manipulator', value: '6-DOF claw arm' },
+      { label: 'Tether length', value: '2,000 m' },
+      { label: 'Hull material', value: 'Ti-6Al-4V pressure vessel' },
+      { label: 'Thrusters', value: '8 × brushless' },
+      { label: 'Navigation', value: 'DVL + INS + USBL' },
+      { label: 'Lighting', value: '2 × 10,000 lm LED' },
+      { label: 'Weight in air', value: '285 kg' },
+      { label: 'Payload capacity', value: '50 kg additional' },
+    ],
+    highlights: [
+      'Dual-arm manipulator with torque feedback',
+      'Closed-loop station-keeping to ±0.1 m in 2-knot current',
+      'Multi-beam sonar + laser profiling standard fit',
+      'Hot-stab hydraulic tooling interface',
+    ],
+    useCases: ['Pipeline & riser inspection', 'Subsea construction support', 'Salvage & intervention', 'Scientific sampling'],
   },
   {
     id: 'aegis-one',
+    slug: 'aegis-one',
     name: 'Aegis One',
     tagline: 'AI-guided autonomous submarine',
     image: '/pictures/marc-antoine-dery-Klikhd4zT6A-unsplash.jpg',
@@ -49,5 +90,24 @@ export const fleetUnits = [
       { label: 'Comms', value: 'Acoustic link' },
     ],
     accent: 'green',
+    fullSpecs: [
+      { label: 'Depth rating', value: '6,000 m' },
+      { label: 'Endurance', value: '30 days' },
+      { label: 'Guidance', value: 'Onboard AI + pre-loaded mission' },
+      { label: 'Comms', value: 'Acoustic link (USBL)' },
+      { label: 'Hull material', value: 'Carbon fibre / ceramic pressure sphere' },
+      { label: 'Propulsion', value: 'Single-screw + 4 × trim thruster' },
+      { label: 'Navigation', value: 'INS + terrain-referenced' },
+      { label: 'Survey payload', value: 'Multi-beam + SAS + camera' },
+      { label: 'Weight in air', value: '620 kg' },
+      { label: 'Range', value: '>3,000 km' },
+    ],
+    highlights: [
+      'Zero-tether fully autonomous operation',
+      'Onboard AI replanning in real time from sensor data',
+      'Acoustic burst comms — no surface presence required',
+      '30-day endurance on a single charge cycle',
+    ],
+    useCases: ['Long-range seabed survey', 'Covert environmental monitoring', 'Deep-water mineral mapping', 'Search & locate missions'],
   },
 ]
