@@ -3,7 +3,7 @@
  */
 export default function ServiceBlock({ index, title, description }) {
   return (
-    <article className="service-block border border-white/6 bg-white/[0.02] p-6 transition-colors duration-300 hover:border-white/12 hover:bg-white/[0.04] md:p-7">
+    <article className="service-block flex h-full flex-col border border-white/6 bg-white/[0.02] p-6 transition-colors duration-300 hover:border-white/12 hover:bg-white/[0.04] md:p-7">
       <span className="font-sans text-[10px] font-medium uppercase tracking-[0.2em] text-white/30">
         {index}
       </span>

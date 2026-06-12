@@ -33,7 +33,7 @@ export default function Support() {
 
         <StaggerReveal className="mb-16 grid gap-4 sm:grid-cols-2 lg:grid-cols-4 md:mb-20">
           {serviceBlocks.map((block) => (
-            <StaggerItem key={block.id}>
+            <StaggerItem key={block.id} className="h-full">
               <ServiceBlock {...block} />
             </StaggerItem>
           ))}
