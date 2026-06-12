@@ -1,13 +1,10 @@
 import { Link } from 'react-router-dom'
 
-/**
- * Subsea Systems wordmark — stacked inline SVG for crisp rendering at any size.
- */
 export default function Logo({ className = '' }) {
   return (
     <Link
       to="/"
-      className={`logo inline-block text-white drop-shadow-[0_2px_12px_rgba(0,0,0,0.45)] transition-opacity duration-300 hover:opacity-80 ${className}`}
+      className={`inline-block text-white drop-shadow-[0_2px_12px_rgba(0,0,0,0.45)] transition-opacity duration-300 hover:opacity-80 ${className}`}
       aria-label="Subsea Systems — Home"
     >
       <svg
@@ -25,9 +22,8 @@ export default function Logo({ className = '' }) {
           x="40"
           y="22"
           fill="currentColor"
-          fontFamily="'Cormorant Garamond', Georgia, 'Times New Roman', serif"
+          className="logo-wordmark"
           fontSize="16"
-          fontWeight="600"
           letterSpacing="0.26em"
         >
           SUBSEA
@@ -36,9 +32,8 @@ export default function Logo({ className = '' }) {
           x="40"
           y="44"
           fill="currentColor"
-          fontFamily="'Cormorant Garamond', Georgia, 'Times New Roman', serif"
+          className="logo-wordmark"
           fontSize="16"
-          fontWeight="600"
           letterSpacing="0.26em"
         >
           SYSTEMS

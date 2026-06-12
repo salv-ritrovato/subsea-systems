@@ -5,6 +5,12 @@
 
 @layer components {
 
+  /* Logo SVG text — uses CSS font-family so the theme font applies consistently */
+  .logo-wordmark {
+    font-family: var(--font-serif);
+    font-weight: 600;
+  }
+
   /* Timeline — vertical connector line with dot markers.
      Used by BuildProcess (engineering) and DepthZones (deep-ocean). */
 
