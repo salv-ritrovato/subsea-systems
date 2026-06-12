@@ -124,7 +124,7 @@ export default function FleetUnitPage() {
             </p>
             <div className={`border ${c.border} divide-y divide-white/6`}>
               {unit.fullSpecs.map(({ label, value }) => (
-                <div key={label} className="flex items-baseline justify-between gap-4 px-5 py-3.5">
+                <div key={label} className="flex items-start justify-between gap-4 px-5 py-3.5">
                   <span className="font-sans text-[10px] uppercase tracking-[0.15em] text-white/40">
                     {label}
                   </span>
