@@ -6,11 +6,11 @@ const configs = {
   deep: {
     fullScreen: { enable: false },
     particles: {
-      number: { value: 55, density: { enable: true } },
-      color: { value: ['#38bdf8', '#67e8f9', '#a5f3fc', '#e0f2fe'] },
+      number: { value: 60, density: { enable: true } },
+      color: { value: ['#ffffff', '#e0f2fe', '#f0f9ff', '#bae6fd'] },
       opacity: {
-        value: { min: 0.04, max: 0.22 },
-        animation: { enable: true, speed: 0.4, sync: false },
+        value: { min: 0.08, max: 0.38 },
+        animation: { enable: true, speed: 0.3, sync: false },
       },
       size: {
         value: { min: 0.8, max: 2.8 },
