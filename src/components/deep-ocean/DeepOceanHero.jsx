@@ -1,3 +1,4 @@
+import { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { deepOceanHero } from '../../data/deepOceanData'
@@ -7,18 +8,26 @@ import './deep-ocean.css'
 const JELLYFISH_VIDEO = '/videos/213616.mp4'
 
 export default function DeepOceanHero() {
+  const videoRef = useRef(null)
+
+  useEffect(() => {
+    const video = videoRef.current
+    if (!video) return
+    video.play().catch(() => {})
+  }, [])
+
   return (
     <section className="deep-ocean-hero bg-[#030609]">
       <div className="absolute inset-0 overflow-hidden">
         <video
+          ref={videoRef}
           className="absolute inset-0 h-full w-full object-cover"
           src={JELLYFISH_VIDEO}
           poster="/pictures/maneph9-jellyfish-5818601.jpg"
-          autoPlay
           muted
           loop
           playsInline
-          preload="none"
+          preload="auto"
           aria-hidden="true"
         />
         <div
